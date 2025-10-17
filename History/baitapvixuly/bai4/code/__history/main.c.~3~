@@ -1,0 +1,68 @@
+#include <16F877A.h>
+
+#device ADC=10
+
+#fuses HS, NOWDT, PROTECT
+
+#use delay(clock=20M)
+
+#use fast_io(b)
+
+#use fast_io(c)
+
+static unsigned char So[]={0x03, 0x9f, 0x25, 0x0d, 0x99, 0x49, 0x41, 0x1b, 0x01, 0x09};
+unsigned int8 DV, TP;
+
+unsigned int8 Value1, Value2, Value3;
+float Temp; 
+
+void Hienthi()
+{ 
+TP=Value1%10;
+DV=Value 1/10;
+output_c(0x01);
+output_b(So[DV]-0x01);
+delay_ms(1); 
+output_c(0x02);
+output_b(So[TP]); 
+delay_ms(1);
+
+TP-Value2%10; 
+DV=Value2/10;
+output_c(0x04);
+output_b(So[DV]-0x01);
+delay_ms(1);
+output_c(0x08);
+output_b(So[TP]);
+delay_ms(1);
+
+output_c(0x00);
+output_b(0xff);
+delay_ms(1);
+
+
+}
+void Doc_ADC()
+{
+set_adc_channel(0);
+delay_us(20); 
+temp=read_adc(); 
+Value1=(int8)((temp*50)/1023);
+
+set_adc_channel(1); 
+delay_us(20); 
+temp=read_adc();
+Value2=(int8)((temp*50)/1023);
+}
+void main()
+{
+set_tris_b(0x00);
+set_tris_c(0x00);
+setup_adc(ADC_CLOCK_INTERNAL);
+setup_adc_ports(ANO_AN1);
+while(true)
+{
+Doc_ADC();
+Hienthi();
+}
+}

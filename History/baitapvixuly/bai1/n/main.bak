@@ -1,0 +1,57 @@
+#include <main.h>
+// Khai báo các chân GPIO cho 8 dèn
+
+#define LED1_PIN RB0
+
+#define LED2_PIN RB1
+
+#define LED3_PIN RB2
+
+#define LED4_PIN RB3
+
+#define LED5_PIN RB4
+
+#define LED6_PIN RB5
+
+#define LED7_PIN RB6
+
+#define LED8_PIN RB7
+
+
+// Hàm d? nh?p nháy dèn
+
+void blink(int led_pin, int delay_time) 
+{
+    led_pin = 1;
+ 
+   __delay_ms(delay_time);
+ 
+   led_pin = 0;
+   
+   __delay_ms(delay_time);
+}
+   
+
+void main() {
+
+   // Thi?t l?p chân GPIO là OUTPUT
+    
+   TRISB = 0;
+
+    // M?ng luu tr? tr?ng thái c?a các dèn
+    
+   int leds[] = {LED1_PIN, LED2_PIN, LED3_PIN, LED4_PIN, LED5_PIN, LED6_PIN, LED7_PIN, LED8_PIN};
+
+
+   // L?p vô h?n d? nh?p nháy các dèn
+   
+   while (1) {
+        // Nh?p nháy 8 dèn t?nh ti?n 1s
+        
+   for (int i = 0; i < 8; i++) {
+blink(leds[i], 1000);
+        }
+// Nh?p nháy dèn th? 9 m?i 50ms
+blink(leds[8], 50);
+    }
+}

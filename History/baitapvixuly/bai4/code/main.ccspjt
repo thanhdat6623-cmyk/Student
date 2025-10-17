@@ -1,0 +1,69 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.112
+Compiler=PCM
+CCSVersion=5.112
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[D:\baitapvixuly\bai4\code\main]
+Type=4
+[mru-list]
+1=main.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=2
+D1=20-11-2023
+D1_L=16
+D1_L1=[65582]Project Opened.
+D1_L2=[67148]Started Editing.
+D1_L3=[67562]Stopped Editing.
+D1_L4=[67650]Started Editing.
+D1_L5=[70501]Stopped Editing.
+D1_L6=[70740]Started Editing.
+D1_L7=[71174]Stopped Editing.
+D1_L8=[71230]Started Editing.
+D1_L9=[71788]Stopped Editing.
+TotalEdit=52
+TotalDebug=0
+D1_E=52
+D1_D=0
+D1_L10=[79775]Project Closed.
+D1_L11=[80174]Project Opened.
+D1_L12=[80183]Project Closed.
+D1_L13=[80183]Project Opened.
+D1_L14=[80245]Started Editing.
+D1_L15=[80550]Stopped Editing.
+D1_L16=[82576]Project Closed.
+D2=11-12-2023
+D2_L=8
+D2_L1=[78070]Project Opened.
+D2_L2=[78071]Project Closed.
+D2_L3=[78072]Project Opened.
+D2_L4=[78082]Project Closed.
+D2_L5=[81756]Project Opened.
+D2_L6=[81757]Project Closed.
+D2_L7=[81758]Project Opened.
+D2_L8=[81816]Project Closed.
+
+[Opened Files]
+1=main.h
+t1=1
+Count=1
+2=main.h
+t2=1
+3=C:\Program Files (x86)\PICC\Devices\16F877A.h
+t3=1
+[main.c]
+Type=4
+
+[defines]
+buildcount=9
+[Units]
+Count=1
+1=main (main)

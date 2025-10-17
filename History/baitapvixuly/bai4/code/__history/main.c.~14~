@@ -1,0 +1,74 @@
+#include <16F877A.h>
+
+#device ADC=10
+
+#fuses HS, NOWDT, PROTECT
+
+#use delay(clock=20M)
+
+#use fast_io(b)
+
+#use fast_io(c)
+
+static unsigned char So[]={0xC0,0xF9,0xA4,0xB0,0x99,0x92,0x82,0x0F8,0x80,0x90};
+unsigned int8 DV, TP;
+
+unsigned int8 Value1, Value2;
+float Temp; 
+
+void Hienthi()
+{
+   TP=Value1%10;
+   DV=Value1/10;
+   output_c(0x01);
+   output_b(So[DV]-0x80);
+   delay_ms(5);
+   output_c(0x02);
+   output_b(So[TP]);
+   delay_ms(5);
+   
+   TP=Value2%10;
+   DV=Value2/10;
+   output_c(0x04);
+   output_b(So[DV]-0x80);
+   delay_ms(5);
+   output_c(0x08);
+   output_b(So[TP]);
+   delay_ms(5);
+}
+void Doc_ADC()
+{
+   set_adc_channel(0);
+   delay_us(20);
+   temp=read_adc();
+   Value1=(int8)((temp*50)/1023);
+   
+   set_adc_channel(1);
+   delay_us(20);
+   temp=read_adc();
+   Value2=(int8)((temp*50)/1023);
+}
+void Doc_ADC()
+{
+set_adc_channel(0);
+delay_us(20); 
+temp=read_adc(); 
+Value1=(int8)((temp*50)/1023);
+
+set_adc_channel(1); 
+delay_us(20); 
+temp=read_adc();
+Value2=(int8)((temp*50)/1023);
+}
+void main()
+{
+set_tris_b(0x00);
+set_tris_c(0x00);
+setup_adc(ADC_CLOCK_INTERNAL);
+setup_adc_ports(ALL_ANALOG);
+while(true)
+{
+Doc_ADC();
+Hienthi();
+}
+}

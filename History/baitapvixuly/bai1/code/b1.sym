@@ -1,0 +1,71 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+021     bai1.i
+022-029 bai1.a
+02A     bai1.@SCRATCH1
+02B     bai1.@SCRATCH2
+02C-02D @MUL1616.P1
+02C     bai1.@SCRATCH3
+02D     @delay_ms2.P1
+02E-02F @MUL1616.P1
+030     @MUL1616.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @delay_ms2
+000018  bai1
+000042  @MUL1616
+00007C  MAIN
+00007C  @cinit1
+000086  @cinit2
+
+Project Directory:
+    D:\baitapvixuly\bai1\code\
+
+Project Files:
+    b1.c                                                    [07-Thg11-23 13:31  CRC=A0210E39]
+    b1.h                                                    [04-Thg11-23 18:06  CRC=00000000]
+    C:\Program Files (x86)\PICC\Devices\16F877A.h           [21-Thg10-22 11:02  CRC=6A06E202]
+
+Source signature=742ED23D
+Program memory checksum=0000
+Hex file CRC=C373
+
+Units:
+    D:\baitapvixuly\bai1\code\b1 (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   b1.xsym
+    Errors:      b1.err
+    Ext Symbols: b1.esym
+    INHX8:       b1.hex
+    Symbols:     b1.sym
+    List:        b1.lst
+    Debug/COFF:  b1.cof
+    Project:     b1.ccspjt
+    Call Tree:   b1.tre
+    Statistics:  b1.STA

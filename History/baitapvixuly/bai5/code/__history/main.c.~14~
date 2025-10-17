@@ -1,0 +1,34 @@
+#include <bttth5.h>
+#include <lcd.c>
+#use delay(clock=20M) 
+float temp,temp1;
+void Doc_ADC()
+{
+ set_adc_channel(0); //Chon kênh AN0
+ delay_us(20); //Tre toi thieu 20us
+ temp=read_adc();
+set_adc_channel(1); //Chon kênh AN1
+ delay_us(20); //Tre toi thieu 20us
+ temp1=read_adc();
+ 
+}
+void main()
+{
+setup_adc(adc_clock_internal);
+ setup_adc_ports(an0_an1_an3);
+ lcd_Init();
+   while(TRUE)
+   {
+      Doc_ADC();
+      lcd_gotoxy(1,1);
+      lcd_putc("Gia tri ADC: ");
+      lcd_gotoxy(14,1);
+      printf(lcd_putc,"%.2f ",temp);
+      lcd_gotoxy(1,2);
+      lcd_putc("Gia tri ADC: ");
+      lcd_gotoxy(14,2);
+      printf(lcd_putc,"%.2f ",temp1);
+    
+   }
+
+}

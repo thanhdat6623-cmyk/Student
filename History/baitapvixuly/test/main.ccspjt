@@ -1,0 +1,46 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.112
+Compiler=PCM
+CCSVersion=5.112
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[D:\baitapvixuly\test\main]
+Type=4
+[mru-list]
+1=main.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=2
+D1=04-11-2023
+D1_L=2
+D1_L1=[47731]Project Opened.
+D1_L2=[47737]Started Editing.
+D2=11-12-2023
+D2_L=3
+D2_L1=[81816]Project Opened.
+D2_L2=[81875]Started Editing.
+D2_L3=[82545]Stopped Editing.
+
+[Opened Files]
+1=main.c
+t1=1
+Count=2
+2=main.h
+t2=1
+3=C:\Program Files (x86)\PICC\Devices\16F877A.h
+t3=25
+[main.c]
+Type=4
+
+[defines]
+buildcount=11
+[Units]
+Count=1
+1=main (main)

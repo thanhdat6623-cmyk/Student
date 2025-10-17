@@ -1,0 +1,13 @@
+Compiling D:\baitapvixuly\bai3\code\main on 10-Thg11-23 at 11:33
+*** Error 33 "D:\baitapvixuly\bai3\code\main.c" Line 5(7,11): Expecting a {
+*** Error 22 "D:\baitapvixuly\bai3\code\main.c" Line 5(27,28): Bad expression syntax
+*** Error 22 "D:\baitapvixuly\bai3\code\main.c" Line 6(27,28): Bad expression syntax
+*** Error 22 "D:\baitapvixuly\bai3\code\main.c" Line 7(27,28): Bad expression syntax
+*** Error 22 "D:\baitapvixuly\bai3\code\main.c" Line 8(27,28): Bad expression syntax
+*** Error 22 "D:\baitapvixuly\bai3\code\main.c" Line 9(27,28): Bad expression syntax
+*** Error 22 "D:\baitapvixuly\bai3\code\main.c" Line 10(27,28): Bad expression syntax
+*** Error 22 "D:\baitapvixuly\bai3\code\main.c" Line 11(27,28): Bad expression syntax
+*** Error 22 "D:\baitapvixuly\bai3\code\main.c" Line 12(27,28): Bad expression syntax
+*** Error 22 "D:\baitapvixuly\bai3\code\main.c" Line 13(27,28): Bad expression syntax
+      10 Errors,  0 Warnings.
+Build Failed.

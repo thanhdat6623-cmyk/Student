@@ -1,0 +1,4 @@
+Added Component: Designator=U?(water sensor)
+Added Pin To Net: NetName=NetESP32_5 Pin=U?-1
+Added Pin To Net: NetName=NetESP32_16 Pin=U?-2
+Added Member To Class: ClassName=Sheet1 Member=Component U? water sensor

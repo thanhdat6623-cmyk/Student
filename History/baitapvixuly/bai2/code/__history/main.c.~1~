@@ -1,0 +1,28 @@
+#include "D:\baitapvixuly\bai2\code\main.h"
+#define  LED PORTC
+void bai1(void)
+{
+   int i;
+   unsigned int8 a[8]={0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80};
+   for(i=0;i<=7;i++){
+      OUTPUT_B(a[i]);
+      delay_ms((i+1)*1000);
+   }
+   OUTPUT_B(0xFF);
+   delay_ms(3000);
+   OUTPUT_B(0x00);
+}
+void bai2()
+{
+   OUTPUT_HIGH(PIN_C0);
+   delay_ms(100);
+   OUTPUT_LOW(PIN_C0);
+}
+void main()
+{
+   LED=0;
+   while(true){
+         bai1();
+         bai2();
+      }
+}

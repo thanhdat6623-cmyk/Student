@@ -1,0 +1,17 @@
+ÀÄmain
+   ÃÄMAIN  0/36  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄ@cinit2  (Inline)  Ram=0
+   ³  ÀÄhienso  0/126  Ram=12
+   ³     ÃÄ@DIV1616  0/37  Ram=5
+   ³     ÃÄseg  0/65  Ram=1
+   ³     ÃÄ@delay_ms1  0/21  Ram=1
+   ³     ÃÄ@DIV1616  0/37  Ram=5
+   ³     ÃÄ@DIV1616  0/37  Ram=5
+   ³     ÃÄseg  0/65  Ram=1
+   ³     ÃÄ@delay_ms1  0/21  Ram=1
+   ³     ÃÄ@DIV1616  0/37  Ram=5
+   ³     ÃÄ@DIV1616  0/37  Ram=5
+   ³     ÃÄseg  0/65  Ram=1
+   ³     ÀÄ@delay_ms1  0/21  Ram=1
+   ÀÄNgat_timer0  0/46  Ram=0

@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=NetESP32_17 Pin=ESP32-14
+Added Pin To Net: NetName=NetESP32_17 Pin=ph sensor-2
+Change Net Name : Old Net Name=NetESP32_17 New Net Name=NetESP32_14

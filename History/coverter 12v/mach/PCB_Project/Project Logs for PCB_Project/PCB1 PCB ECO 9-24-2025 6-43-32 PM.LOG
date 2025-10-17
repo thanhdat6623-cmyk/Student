@@ -1,0 +1,40 @@
+Change Component Designator: OldDesignator=U? NewDesignator=U1
+Added Component: Designator=C1(CAPACITOR 0805)
+Added Component: Designator=C2(CAPACITOR 0805)
+Added Component: Designator=D1(DIODE_SMA)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digikey PN"; Value = "SS34FSTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLCPCB"; Value = "C2909963"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser PN"; Value = "512-SS34"; VariantName = "[No Variations]"
+Added Component: Designator=I1(1040)
+Added Component: Designator=R1(RESISTOR_0805)
+Added Component: Designator=R2(RESISTOR_0805)
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=GND Pin=U1-2
+Added Net: Name=GND
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=NetC1_1 Pin=D1-2
+Added Pin To Net: NetName=NetC1_1 Pin=R1-2
+Added Net: Name=NetC1_1
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=NetC2_1 Pin=I1-2
+Added Pin To Net: NetName=NetC2_1 Pin=U1-4
+Added Pin To Net: NetName=NetC2_1 Pin=U1-5
+Added Net: Name=NetC2_1
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=I1-1
+Added Pin To Net: NetName=NetD1_1 Pin=U1-1
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Pin To Net: NetName=NetR1_1 Pin=R2-2
+Added Pin To Net: NetName=NetR1_1 Pin=U1-3
+Added Net: Name=NetR1_1
+Added Member To Class: ClassName=Sheet1 Member=Component C1 CAPACITOR 0805
+Added Member To Class: ClassName=Sheet1 Member=Component C2 CAPACITOR 0805
+Added Member To Class: ClassName=Sheet1 Member=Component D1 SS34
+Added Member To Class: ClassName=Sheet1 Member=Component I1 1040
+Added Member To Class: ClassName=Sheet1 Member=Component R1 RESISTOR_0805
+Added Member To Class: ClassName=Sheet1 Member=Component R2 RESISTOR_0805

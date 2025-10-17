@@ -1,0 +1,17 @@
+#include <main.h>
+
+void main()
+{
+
+   while(TRUE)
+   {
+   
+OUTPUT_HIGH(pin_c0);
+delay_ms(50);
+
+OUTPUT_LOW(pin_c0);
+delay_ms(10);
+//TODO: User Code
+   }
+
+}

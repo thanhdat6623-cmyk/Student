@@ -1,0 +1,9 @@
+ÀÄb1
+   ÀÄMAIN  0/15  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄ@cinit2  (Inline)  Ram=0
+      ÀÄbai1  0/100  Ram=12
+         ÃÄ@MUL1616  (Inline)  Ram=5
+         ÃÄ@delay_ms2  0/20  Ram=1
+         ÃÄ@delay_ms2  0/20  Ram=1
+         ÀÄ@delay_ms2  0/20  Ram=1

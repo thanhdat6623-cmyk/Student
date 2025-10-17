@@ -1,0 +1,98 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-029 So
+02A     DV
+02B     TP
+02C     Value1
+02D     Value2
+02E-031 Temp
+032-035 @MULFF.P1
+032-033 @ITOF.P2
+032     @DIV88.P3
+032-035 @SFTOI.P4
+032     @delay_ms1.P5
+032     Hienthi.@SCRATCH1
+032     Doc_ADC.@SCRATCH1
+033     @DIV88.P1
+033     Doc_ADC.@SCRATCH2
+034     @DIV88.@SCRATCH1
+034     Doc_ADC.@SCRATCH3
+035     Doc_ADC.@SCRATCH4
+036-039 @DIVFF.P1
+036-039 @MULFF.P2
+03A-03D @DIVFF.P1
+03A     @MULFF.@SCRATCH1
+03B     @MULFF.@SCRATCH2
+03C     @MULFF.@SCRATCH3
+03D     @MULFF.@SCRATCH4
+03E     @MULFF.@SCRATCH5
+03E     @DIVFF.@SCRATCH1
+03F     @DIVFF.@SCRATCH2
+040     @DIVFF.@SCRATCH3
+041     @DIVFF.@SCRATCH4
+042     @DIVFF.@SCRATCH5
+043     @DIVFF.@SCRATCH6
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @ITOF
+000021  @MULFF
+000096  @DIVFF
+000160  @SFTOI
+00017F  Doc_ADC
+00022A  @DIV88
+00023F  @delay_ms1
+000253  Hienthi
+0002AA  MAIN
+0002AA  @cinit1
+0002B4  @cinit2
+
+Project Directory:
+    D:\baitapvixuly\bai4\code\
+
+Project Files:
+    main.c                                                  [20-Thg11-23 19:47  CRC=C9C70B21]
+    C:\Program Files (x86)\PICC\Devices\16F877A.h           [21-Thg10-22 11:02  CRC=6A06E202]
+
+Source signature=9DD4CF25
+Program memory checksum=0000
+Hex file CRC=DA81
+
+Units:
+    D:\baitapvixuly\bai4\code\main (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

@@ -1,0 +1,30 @@
+Added Component: Designator=ESP32(ESP32 WROOM 32 KIT)
+Added Component: Designator=ph sensor(HED3)
+Add component (AddParameter): Name = "Value"; Value = "Header 3"; VariantName = "[No Variations]"
+Added Component: Designator=turbidyty module(HED3)
+Add component (AddParameter): Name = "Value"; Value = "Header 3"; VariantName = "[No Variations]"
+Added Component: Designator=water sensor(HED3)
+Add component (AddParameter): Name = "Value"; Value = "Header 3"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetESP32_5 Pin=ESP32-5
+Added Pin To Net: NetName=NetESP32_5 Pin=ph sensor-3
+Added Net: Name=NetESP32_5
+Added Pin To Net: NetName=NetESP32_6 Pin=ESP32-6
+Added Pin To Net: NetName=NetESP32_6 Pin=turbidyty module-2
+Added Net: Name=NetESP32_6
+Added Pin To Net: NetName=NetESP32_7 Pin=ESP32-7
+Added Pin To Net: NetName=NetESP32_7 Pin=water sensor-1
+Added Net: Name=NetESP32_7
+Added Pin To Net: NetName=NetESP32_14 Pin=ESP32-14
+Added Pin To Net: NetName=NetESP32_14 Pin=ph sensor-2
+Added Net: Name=NetESP32_14
+Added Pin To Net: NetName=NetESP32_16 Pin=ESP32-16
+Added Pin To Net: NetName=NetESP32_16 Pin=ph sensor-1
+Added Pin To Net: NetName=NetESP32_16 Pin=turbidyty module-1
+Added Pin To Net: NetName=NetESP32_16 Pin=water sensor-2
+Added Net: Name=NetESP32_16
+Added Pin To Net: NetName=NetESP32_17 Pin=ESP32-17
+Added Pin To Net: NetName=NetESP32_17 Pin=turbidyty module-3
+Added Pin To Net: NetName=NetESP32_17 Pin=water sensor-3
+Added Net: Name=NetESP32_17
+Added Class: Name=Sheet1
+Added Room: Name=Sheet1

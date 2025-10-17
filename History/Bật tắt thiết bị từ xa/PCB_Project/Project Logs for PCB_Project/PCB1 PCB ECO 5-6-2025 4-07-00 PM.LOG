@@ -1,0 +1,8 @@
+Added Component: Designator=U?(ESP32_30)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com/datasheet/2/891/esp32_wroom_32d_esp32_wroom_32u_datasheet_en-1365844.pdf"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Dout Pin=U?-4
+Added Pin To Net: NetName=GND Pin=U?-29
+Added Pin To Net: NetName=VCC Pin=U?-30
+Added Member To Class: ClassName=Sheet1 Member=Component U? ESP32_30
+Added Room: Name=Sheet1

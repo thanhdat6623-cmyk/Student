@@ -1,0 +1,8 @@
+Added Component: Designator=IC?(DIP14/W0.3)
+Add component (AddParameter): Name = "Value"; Value = "LM324"; VariantName = "[No Variations]"
+Added Component: Designator=IC?(DIP14/W0.3)
+Add component (AddParameter): Name = "Value"; Value = "LM324"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=Sheet1 Member=Component IC? LM324
+Added Member To Class: ClassName=Sheet1 Member=Component IC? LM324
+Added Member To Class: ClassName=Sheet1 Member=Component IC? LM324
+Added Room: Name=Sheet1

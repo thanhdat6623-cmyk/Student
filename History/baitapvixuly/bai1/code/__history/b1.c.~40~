@@ -1,0 +1,30 @@
+#include <b1.h>
+#int_TIMER1
+void TIMER1_isr(void){
+   set_timer1(3035);
+    output_toggle(pin_C0);
+}
+void bai1(void)
+{
+   int i;
+   unsigned int8 a[8]={0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80};
+   for(i=0;i<=7;i++){
+      OUTPUT_B(a[i]);
+      delay_ms((i+1)*1000);
+   }
+   OUTPUT_B(0xFF);
+   delay_ms(3000);
+   OUTPUT_B(0x00);
+}
+void main()
+{
+   output_drive(pin_C0);
+   setup_timer_1(T1_inTERNAL|T1_DIV_BY_8);  
+    set_timer1(3035); 
+   enable_interrupts(INT_TIMER1);
+   enable_interrupts(GLOBAL);
+   while(true){
+         bai1();
+      }
+}
+

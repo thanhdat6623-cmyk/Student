@@ -1,0 +1,47 @@
+#include <16F877A.h>
+#use delay(crystal=20000000)
+
+#define LCD_ENABLE_PIN PIN_C0
+#define LCD_RS_PIN     PIN_C1
+#define LCD_RW_PIN     PIN_C2
+#define LCD_DATA4      PIN_C3
+#define LCD_DATA5      PIN_C4
+#define LCD_DATA6      PIN_C5
+#define LCD_DATA7      PIN_C6
+#include<lcd.c> 
+
+float v1,v2;
+void Doc_ADC()
+{
+   set_adc_channel(0); 
+   delay_us(20); 
+   v1=read_adc();
+   
+   set_adc_channel(1); 
+   delay_us(20); 
+   v2=read_adc();
+ 
+}
+void main()
+{
+   set_tris_C(0); 
+   
+   setup_adc(adc_clock_internal);
+   setup_adc_ports(an0_an1_an3);
+   
+   lcd_Init();
+    
+   while(TRUE)
+   {
+   lcd_gotoxy(1,1);
+   lcd_putc("Gia tri RV1: ");
+   lcd_gotoxy(14,1);
+   printf(lcd_putc,"%f ",v1);
+   lcd_gotoxy(1,2);
+   lcd_putc("Gia tri RV1: ");
+   lcd_gotoxy(14,2);
+   printf(lcd_putc,"%f ",v2);
+    
+   }
+
+}
